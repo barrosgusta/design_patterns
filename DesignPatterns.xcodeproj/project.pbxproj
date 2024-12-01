@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXCopyFilesBuildPhase section */
+		58105F082CFBCE850095F273 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		58105F152CFBCECF0095F273 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		5820585B2CFBB30A007F392E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -19,18 +37,68 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5820585D2CFBB30A007F392E /* ShapeFactory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShapeFactory; sourceTree = BUILT_PRODUCTS_DIR; };
+		58105F0A2CFBCE850095F273 /* FactoryPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FactoryPattern; sourceTree = BUILT_PRODUCTS_DIR; };
+		58105F172CFBCECF0095F273 /* SingletonPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SingletonPattern; sourceTree = BUILT_PRODUCTS_DIR; };
+		5820585D2CFBB30A007F392E /* DesignPatterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatterns; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		58105F112CFBCEB10095F273 /* Exceptions for "FactoryPattern" folder in "DesignPatterns" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ShapeFactory/src/ShapeFactory.cpp,
+				ShapeFactory/src/shapes/Circle.cpp,
+				ShapeFactory/src/shapes/Rectangle.cpp,
+				ShapeFactory/src/shapes/Square.cpp,
+				ShapeFactory/src/shapes/Triangle.cpp,
+			);
+			target = 5820585C2CFBB30A007F392E /* DesignPatterns */;
+		};
+		58105F122CFBCEB10095F273 /* Exceptions for "FactoryPattern" folder in "FactoryPattern" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ShapeFactory/src/ShapeFactory.cpp,
+				ShapeFactory/src/shapes/Circle.cpp,
+				ShapeFactory/src/shapes/Rectangle.cpp,
+				ShapeFactory/src/shapes/Square.cpp,
+				ShapeFactory/src/shapes/Triangle.cpp,
+			);
+			target = 58105F092CFBCE850095F273 /* FactoryPattern */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5820585F2CFBB30A007F392E /* ShapeFactory */ = {
+		58105F0B2CFBCE850095F273 /* FactoryPattern */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ShapeFactory;
+			exceptions = (
+				58105F112CFBCEB10095F273 /* Exceptions for "FactoryPattern" folder in "DesignPatterns" target */,
+				58105F122CFBCEB10095F273 /* Exceptions for "FactoryPattern" folder in "FactoryPattern" target */,
+			);
+			path = FactoryPattern;
+			sourceTree = "<group>";
+		};
+		58105F182CFBCECF0095F273 /* SingletonPattern */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SingletonPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		58105F072CFBCE850095F273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58105F142CFBCECF0095F273 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5820585A2CFBB30A007F392E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,7 +112,8 @@
 		582058542CFBB30A007F392E = {
 			isa = PBXGroup;
 			children = (
-				5820585F2CFBB30A007F392E /* ShapeFactory */,
+				58105F0B2CFBCE850095F273 /* FactoryPattern */,
+				58105F182CFBCECF0095F273 /* SingletonPattern */,
 				5820585E2CFBB30A007F392E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,7 +121,9 @@
 		5820585E2CFBB30A007F392E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5820585D2CFBB30A007F392E /* ShapeFactory */,
+				5820585D2CFBB30A007F392E /* DesignPatterns */,
+				58105F0A2CFBCE850095F273 /* FactoryPattern */,
+				58105F172CFBCECF0095F273 /* SingletonPattern */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,9 +131,53 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5820585C2CFBB30A007F392E /* ShapeFactory */ = {
+		58105F092CFBCE850095F273 /* FactoryPattern */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 582058642CFBB30A007F392E /* Build configuration list for PBXNativeTarget "ShapeFactory" */;
+			buildConfigurationList = 58105F0E2CFBCE850095F273 /* Build configuration list for PBXNativeTarget "FactoryPattern" */;
+			buildPhases = (
+				58105F062CFBCE850095F273 /* Sources */,
+				58105F072CFBCE850095F273 /* Frameworks */,
+				58105F082CFBCE850095F273 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				58105F0B2CFBCE850095F273 /* FactoryPattern */,
+			);
+			name = FactoryPattern;
+			packageProductDependencies = (
+			);
+			productName = FactoryPattern;
+			productReference = 58105F0A2CFBCE850095F273 /* FactoryPattern */;
+			productType = "com.apple.product-type.tool";
+		};
+		58105F162CFBCECF0095F273 /* SingletonPattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58105F1B2CFBCECF0095F273 /* Build configuration list for PBXNativeTarget "SingletonPattern" */;
+			buildPhases = (
+				58105F132CFBCECF0095F273 /* Sources */,
+				58105F142CFBCECF0095F273 /* Frameworks */,
+				58105F152CFBCECF0095F273 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				58105F182CFBCECF0095F273 /* SingletonPattern */,
+			);
+			name = SingletonPattern;
+			packageProductDependencies = (
+			);
+			productName = SingletonPattern;
+			productReference = 58105F172CFBCECF0095F273 /* SingletonPattern */;
+			productType = "com.apple.product-type.tool";
+		};
+		5820585C2CFBB30A007F392E /* DesignPatterns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582058642CFBB30A007F392E /* Build configuration list for PBXNativeTarget "DesignPatterns" */;
 			buildPhases = (
 				582058592CFBB30A007F392E /* Sources */,
 				5820585A2CFBB30A007F392E /* Frameworks */,
@@ -72,14 +187,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				5820585F2CFBB30A007F392E /* ShapeFactory */,
-			);
-			name = ShapeFactory;
+			name = DesignPatterns;
 			packageProductDependencies = (
 			);
 			productName = ShapeFactory;
-			productReference = 5820585D2CFBB30A007F392E /* ShapeFactory */;
+			productReference = 5820585D2CFBB30A007F392E /* DesignPatterns */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -91,12 +203,19 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					58105F092CFBCE850095F273 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					58105F162CFBCECF0095F273 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					5820585C2CFBB30A007F392E = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
-			buildConfigurationList = 582058582CFBB30A007F392E /* Build configuration list for PBXProject "ShapeFactory" */;
+			buildConfigurationList = 582058582CFBB30A007F392E /* Build configuration list for PBXProject "DesignPatterns" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -110,12 +229,28 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5820585C2CFBB30A007F392E /* ShapeFactory */,
+				5820585C2CFBB30A007F392E /* DesignPatterns */,
+				58105F092CFBCE850095F273 /* FactoryPattern */,
+				58105F162CFBCECF0095F273 /* SingletonPattern */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		58105F062CFBCE850095F273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58105F132CFBCECF0095F273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		582058592CFBB30A007F392E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,6 +261,46 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		58105F0F2CFBCE850095F273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BYQ53RS6D2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58105F102CFBCE850095F273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BYQ53RS6D2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		58105F1C2CFBCECF0095F273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BYQ53RS6D2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58105F1D2CFBCECF0095F273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BYQ53RS6D2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		582058622CFBB30A007F392E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -244,43 +419,66 @@
 		582058652CFBB30A007F392E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BYQ53RS6D2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
 		582058662CFBB30A007F392E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BYQ53RS6D2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		582058582CFBB30A007F392E /* Build configuration list for PBXProject "ShapeFactory" */ = {
+		58105F0E2CFBCE850095F273 /* Build configuration list for PBXNativeTarget "FactoryPattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58105F0F2CFBCE850095F273 /* Debug */,
+				58105F102CFBCE850095F273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		58105F1B2CFBCECF0095F273 /* Build configuration list for PBXNativeTarget "SingletonPattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58105F1C2CFBCECF0095F273 /* Debug */,
+				58105F1D2CFBCECF0095F273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		582058582CFBB30A007F392E /* Build configuration list for PBXProject "DesignPatterns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				582058622CFBB30A007F392E /* Debug */,
 				582058632CFBB30A007F392E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		582058642CFBB30A007F392E /* Build configuration list for PBXNativeTarget "ShapeFactory" */ = {
+		582058642CFBB30A007F392E /* Build configuration list for PBXNativeTarget "DesignPatterns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				582058652CFBB30A007F392E /* Debug */,
 				582058662CFBB30A007F392E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
