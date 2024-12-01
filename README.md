@@ -48,6 +48,46 @@ This repository contains C++ projects that demonstrate popular design patterns.
 
 ---
 
+### Build and Run
+
+#### Using Xcode
+
+1.  Open the Xcode project
+2.  Select the desired scheme
+3.  Run the App
+
+#### Mannualy
+
+##### Singleton
+
+1.  Compile
+
+```bash
+g++ SingletonPattern/SingletonRegistration/src/main.cpp SingletonRegistration/UserRegistration.cpp -o SingletonRegistrationApp -pthread
+```
+
+1.  Execution
+
+```bash
+./SingletonRegistrationApp
+```
+
+##### Factory
+
+1.  Compile
+
+```bash
+g++ FactoryPattern/ShapeFactory/src/main.cpp ShapeFactory/*.cpp -o ShapeFactoryApp
+```
+
+2.  Execution
+
+```bash
+./ShapeFactoryApp
+```
+
+---
+
 ## Why These Patterns?
 
 - **Singleton:** Centralized control over resources like user registration.
